@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM UKRI | Kabinet Simpul Sthira 2026/2027</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-ticker">
+        <marquee behavior="scroll" direction="left">
+            Portal Resmi BEM Universitas Kebangsaan Republik Indonesia - Kabinet Simpul Sthira 2026/2027 - Kebersamaan Menyatukan Kekuatan!
+        </marquee>
+    </div>
+
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <img src="ukrilogo.png" alt="Logo UKRI">
+                <img src="bemlogo.png" alt="Logo BEM">
+                <div class="logo-text">
+                    BEM <span>UKRI</span>
+                    <small>Simpul Sthira</small>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#tentang">Visi Misi</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#proker">Proker</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#advokasi">Advokasi</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <h1>Simpul Sthira <br><span class="highlight">Menyatukan Kekuatan</span></h1>
+                <p>Wadah kolaborasi inklusif mahasiswa Universitas Kebangsaan Republik Indonesia untuk bergerak nyata, progresif, dan berintegritas.</p>
+                <div class="hero-btns">
+                    <a href="#advokasi" class="btn-primary">Layanan Advokasi</a>
+                    <a href="#struktur" class="btn-outline">Lihat Kabinet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Visi & Misi</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="icon-circle"><i class="fas fa-eye"></i></div>
+                    <h3>Visi</h3>
+                    <p>Mewujudkan BEM UKRI sebagai pusat pergerakan mahasiswa yang progresif, prestatif, dan berdampak nyata bagi bangsa.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-circle"><i class="fas fa-bullseye"></i></div>
+                    <h3>Misi</h3>
+                    <p>Mengoptimalkan pelayanan advokasi yang solutif serta memperkuat riset pengembangan isu strategis di lingkungan kampus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="struktur" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Struktur Kabinet</h2>
+            
+            <div class="org-chart-wrapper">
+                <div class="org-level level-top">
+                    <div class="profile-card leader">
+                        <img src="presma.jpg" alt="Presiden Mahasiswa">
+                        <div class="profile-info">
+                            <h4>M. Ramdan Malau</h4>
+                            <p>Presiden Mahasiswa</p>
+                        </div>
+                    </div>
+                    <div class="profile-card leader">
+                        <img src="wapresma.jpg" alt="Wakil Presiden Mahasiswa">
+                        <div class="profile-info">
+                            <h4>Nama Wapresma</h4>
+                            <p>Wakil Presiden Mahasiswa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="org-level level-mid">
+                    <div class="profile-card mid">
+                        <img src="sukkab.jpg" alt="Sekkab">
+                        <div class="profile-info">
+                            <h4>Nama Sekkab</h4>
+                            <p>Menteri Sekretaris Kabinet</p>
+                        </div>
+                    </div>
+                    <div class="profile-card mid">
+                        <img src="keuangan.jpg" alt="Menkeu">
+                        <div class="profile-info">
+                            <h4>Nama Menkeu</h4>
+                            <p>Menteri Keuangan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="minister-accordion-grid">
+                    
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="mendagri.jpg" alt="Mendagri">
+                                <div class="header-text">
+                                    <h4>Menteri Dalam Negeri</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang PSDO</div>
+                                <div class="bidang-item">Bidang PSDM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="menlu.jpg" alt="Menlu">
+                                <div class="header-text">
+                                    <h4>Menteri Luar Negeri</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang Hubungan Relasi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="pendidikan.jpg" alt="Mendik">
+                                <div class="header-text">
+                                    <h4>Menteri Pendidikan</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang Kajian Strategis</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="sosial.jpg" alt="Mensos">
+                                <div class="header-text">
+                                    <h4>Menteri Sosial</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang Advokasi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="senior.jpg" alt="Menpora">
+                                <div class="header-text">
+                                    <h4>Menteri Seni & Olahraga</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang Seni</div>
+                                <div class="bidang-item">Bidang Olahraga</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="minister-item">
+                        <div class="minister-header" onclick="toggleMinister(this)">
+                            <div class="header-main">
+                                <img src="medinfo.jpg" alt="Medinfo">
+                                <div class="header-text">
+                                    <h4>Menteri Media & Informasi</h4>
+                                    <p>Nama Menteri</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="minister-body">
+                            <div class="bidang-list">
+                                <div class="bidang-item">Bidang Media 1</div>
+                                <div class="bidang-item">Bidang Media 2</div>
+                                <div class="bidang-item">Bidang Informasi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proker" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Program Utama</h2>
+            <div class="grid-container">
+                <div class="proker-card">
+                    <span class="proker-tag">Internal</span>
+                    <h3>UKRI Connect</h3>
+                    <p>Integrasi informasi layanan mahasiswa satu pintu berbasis platform digital.</p>
+                </div>
+                <div class="proker-card">
+                    <span class="proker-tag">Sosial</span>
+                    <h3>Bakti Kebangsaan</h3>
+                    <p>Program pengabdian masyarakat di pelosok daerah.</p>
+                </div>
+                <div class="proker-card">
+                    <span class="proker-tag">Event</span>
+                    <h3>UKRI Expo 2026</h3>
+                    <p>Ajang kreativitas dan kewirausahaan mahasiswa nasional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Galeri Kegiatan</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=400" alt="Rapat">
+                    <div class="gallery-overlay"><h4>Rapat Pleno Kabinet</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=400" alt="Diskusi">
+                    <div class="gallery-overlay"><h4>Diskusi Strategis</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400" alt="Aksi">
+                    <div class="gallery-overlay"><h4>Aksi Mahasiswa</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advokasi" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Layanan Advokasi</h2>
+            <div class="advokasi-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwA-N_X8zU6_n9L6n0-EaJ9G6-U6-vY-r8-P9G6-U6-vY-r8/viewform?embedded=true" 
+                    width="100%" height="700" frameborder="0">Memuat…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">BEM UKRI 2026/2027</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>&copy; 2026/2027 Badan Eksekutif Mahasiswa UKRI. <br>Kabinet Simpul Sthira.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
